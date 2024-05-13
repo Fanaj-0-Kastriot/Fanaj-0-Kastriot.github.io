@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezantimi i Lojtarëve - Ekipi i Futbollit i Kosovës</title>
+    <link rel="stylesheet" href="CSS/output.css">
+    <link rel="shortcut icon" href="CSS/image/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a8c0ce; 
+            color: #222;
+            overflow-x: hidden;
+        }
+ 
+        .header {
+            background-color: #0b207b;
+            color: #ffffff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+ 
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-left: 20px; 
+        }
+ 
+        .date-time {
+            font-size: 14px;
+            margin-right: 20px; 
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+ 
+        h3 {
+            color: #000000; 
+        }
+ 
+        h1 {
+            color: #ffffff; 
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+ 
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+ 
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+ 
+        li {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+ 
+        .stade {
+            font-style: italic;
+            color: #666;
+        }
+ 
+        .button {
+            background-color: #0b207b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+ 
+        .button:hover {
+            background-color: #063368;
+        }
+    </style>
+</head>
+<body>
+ 
+<div class="header">
+    <img src="CSS/image/logo.png" alt="Logo ekipit" class="logo">
+    <h1>Ekipi i Futbollit i Kosovës</h1> 
+    <span class="date-time"></span> 
+</div>
+ 
+<div class="container">
+    <h1>Prezantimi i Lojtarëve të Ekipit të Futbollit të Kosovës</h1>
+    <p>Ekipi i futbollit të Kosovës është ekipi kombëtar që përfaqëson Kosovën në garat ndërkombëtare të futbollit. Ajo kontrollohet nga Federata e Futbollit e Kosovës (FFK), organizata udhëheqëse e futbollit në Kosovë.</p>
+ 
+    <h3>Historia</h3>
+    <p>Ekipi i futbollit të Kosovës u njoh si anëtar i FIFA-s dhe UEFA-s në vitin 2016, pasi që mori pavarësinë nga Serbia në vitin 2008. Që atëherë, ai ka marrë pjesë në garat ndërkombëtare, si eliminatoret për Kupën e Botës dhe Ligën e Kombeve të UEFA-s.</p>
+ 
+    <h3>Palmaresi</h3>
+    <ul>
+        <li>Rezultati më i mirë në Kupën e Botës: N/A</li>
+        <li>Rezultati më i mirë në Kampionatin Evropian: N/A</li>
+        <li>Kompeticionet tjera: N/A</li>
+    </ul>
+ 
+    <h3>Trajneri aktual</h3>
+    <p>Traneri aktual i ekipit të futbollit të Kosovës është Primož Gliha.</p>
+ 
+    <h3>Lojtarët simbolikë</h3>
+    <ul>
+        <li>Adem Ljajić</li>
+        <li>Milot Rashica</li>
+        <li>Amir Rrahmani</li>
+    </ul>
+ 
+    <h3>Stadiumi Kombëtar</h3>
+    <p class="stade">Stadiumi kombëtar i Kosovës është <em>Stadiumi Fadil Vokrri</em>, i vendosur në Prishtinë, kryeqyteti i vendit.</p>
+ 
+    <a href="page_annexe.html" class="button">Kthehu</a>
+</div>
+ 
+<script>
+    function updateDateTime() {
+        var dateTimeElement = document.querySelector(".date-time");
+        var now = new Date();
+        var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+        dateTimeElement.textContent = now.toLocaleDateString('sq-AL', options);
+    }
+ 
+    setInterval(updateDateTime, 1000);
+ 
+    updateDateTime();
+</script>
+ 
+</body>
+</html>

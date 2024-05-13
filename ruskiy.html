@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Презентация игроков - Национальная сборная Косово</title>
+    <link rel="stylesheet" href="CSS/output.css">
+    <link rel="shortcut icon" href="CSS/image/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a8c0ce;
+            color: #222;
+            overflow-x: hidden;
+        }
+ 
+        .header {
+            background-color: #0b207b;
+            color: #ffffff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+ 
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-left: 20px;
+        }
+ 
+        .date-time {
+            font-size: 14px;
+            margin-right: 20px;
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+ 
+        h3 {
+            color: #000000; 
+        }
+ 
+        h1 {
+            color: #ffffff; 
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+ 
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+ 
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+ 
+        li {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+ 
+        .stade {
+            font-style: italic;
+            color: #666;
+        }
+ 
+        .button {
+            background-color: #0b207b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+ 
+        .button:hover {
+            background-color: #063368;
+        }
+    </style>
+</head>
+<body>
+ 
+<div class="header">
+    <img src="CSS/image/logo.png" alt="Логотип команды" class="logo">
+    <h1>Национальная сборная Косово</h1> 
+    <span class="date-time"></span> 
+</div>
+ 
+<div class="container">
+    <h1>Презентация игроков национальной сборной Косово</h1>
+    <p>Национальная сборная по футболу Косово представляет Косово на международных футбольных соревнованиях. Она контролируется Федерацией футбола Косово (FFK), организацией, управляющей футболом в Косово.</p>
+ 
+    <h3>История</h3>
+    <p>Сборная по футболу Косово была признана членом FIFA и UEFA в 2016 году после получения независимости от Сербии в 2008 году. С тех пор она участвует в международных соревнованиях, таких как отборочные матчи Чемпионата мира и Лига наций УЕФА.</p>
+ 
+    <h3>Палмарес</h3>
+    <ul>
+        <li>Лучший результат на Чемпионате мира: N/A</li>
+        <li>Лучший результат на Чемпионате Европы: N/A</li>
+        <li>Другие соревнования: N/A</li>
+    </ul>
+ 
+    <h3>Текущий тренер</h3>
+    <p>Текущий тренер национальной сборной по футболу Косово - Примож Глиха.</p>
+ 
+    <h3>Эмблематические игроки</h3>
+    <ul>
+        <li>Адем Ляйич</li>
+        <li>Милот Рашица</li>
+        <li>Амир Ррахмани</li>
+    </ul>
+ 
+    <h3>Национальный стадион</h3>
+    <p class="stade">Национальный стадион Косово - <em>Стадион Фадил Вокрри</em>, расположенный в Приштине, столице страны.</p>
+ 
+    <a href="page_annexe.html" class="button">Назад</a>
+</div>
+ 
+<script>
+    function updateDateTime() {
+        var dateTimeElement = document.querySelector(".date-time");
+        var now = new Date();
+        var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+        dateTimeElement.textContent = now.toLocaleDateString('ru-RU', options);
+    }
+ 
+    setInterval(updateDateTime, 1000);
+ 
+    updateDateTime();
+</script>
+ 
+</body>
+</html>

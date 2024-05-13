@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de l'Équipe - Équipe de foot du Kosovo</title>
+    <link rel="stylesheet" href="CSS/output.css">
+    <link rel="shortcut icon" href="CSS/image/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a8c0ce;
+            color: #222;
+            overflow-x: hidden;
+        }
+ 
+        .header {
+            background-color: #0b207b;
+            color: #ffffff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+ 
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-left: 20px;
+        }
+ 
+        .date-time {
+            font-size: 14px;
+            margin-right: 20px; 
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+ 
+        h3 {
+            color: #000000;
+        }
+ 
+        h1 {
+            color: #ffffff; 
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+ 
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+ 
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+ 
+        li {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+ 
+        .stade {
+            font-style: italic;
+            color: #666;
+        }
+ 
+        .button {
+            background-color: #0b207b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+ 
+        .button:hover {
+            background-color: #063368;
+        }
+    </style>
+</head>
+<body>
+ 
+<div class="header">
+    <img src="CSS/image/logo.png" alt="Logo de l'équipe" class="logo">
+    <h1>Équipe de foot du Kosovo</h1> 
+    <span class="date-time"></span> 
+</div>
+ 
+<div class="container">
+    <h1>Présentation de l'Équipe de foot du Kosovo</h1>
+    <p>L'équipe de football du Kosovo est l'équipe nationale représentant le Kosovo dans les compétitions internationales de football. Elle est contrôlée par la Fédération de football du Kosovo (FFK), l'instance dirigeante du football au Kosovo.</p>
+ 
+    <h3>Histoire</h3>
+    <p>L'équipe de football du Kosovo a été reconnue comme membre de la FIFA et de l'UEFA en 2016, après avoir obtenu son indépendance de la Serbie en 2008. Depuis lors, elle participe à des compétitions internationales, telles que les éliminatoires de la Coupe du monde et l'UEFA Nations League.</p>
+ 
+    <h3>Sélectionneur actuel</h3>
+    <p>Le sélectionneur actuel de l'équipe de football du Kosovo est Primož Gliha.</p>
+ 
+    <h3>Joueurs emblématiques</h3>
+    <ul>
+        <li>Adem Ljajić</li>
+        <li>Milot Rashica</li>
+        <li>Amir Rrahmani</li>
+    </ul>
+ 
+    <h3>Stade national</h3>
+    <p class="stade">Le stade national du Kosovo est le <em>Stade Fadil Vokrri</em>, situé à Pristina, la capitale du pays.</p>
+ 
+    <a href="page_annexe.html" class="button">Retour</a>
+</div>
+ 
+<script>
+    function updateDateTime() {
+        var dateTimeElement = document.querySelector(".date-time");
+        var now = new Date();
+        var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+        dateTimeElement.textContent = now.toLocaleDateString('fr-FR', options);
+    }
+ 
+    setInterval(updateDateTime, 1000);
+ 
+    updateDateTime();
+</script>
+ 
+</body>
+</html>
